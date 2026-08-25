@@ -531,15 +531,17 @@ document.addEventListener(
 */
 
 /* ID del servicio configurado en EmailJS */
-const EMAILJS_SERVICE_ID = "TU_SERVICE_ID";
+const EMAILJS_SERVICE_ID =
+	"service_z8omwdj";
 
 /* ID de la plantilla creada en EmailJS */
-const EMAILJS_TEMPLATE_ID = "TU_TEMPLATE_ID";
+const EMAILJS_TEMPLATE_ID =
+	"template_8hmc64o";
 
 /* Clave pública de EmailJS */
-const EMAILJS_PUBLIC_KEY = "TU_PUBLIC_KEY";
-
-
+const EMAILJS_PUBLIC_KEY =
+	"AO3HW1AnBH4VnTDwa";
+	
 
 /* =========================================
    INICIALIZAR EMAILJS
