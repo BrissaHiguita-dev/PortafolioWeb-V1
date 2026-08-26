@@ -1033,3 +1033,39 @@ showCoursesButtons.forEach(
 
     }
 );
+
+
+/* =========================================
+   CARRUSEL AUTOMÁTICO DE IMÁGENES
+   DE LOS PROYECTOS
+========================================= */
+
+const projectCarousels = document.querySelectorAll(".project-carousel");
+
+
+projectCarousels.forEach((carousel) => {
+
+    /* Obtener todas las imágenes del carrusel */
+    const slides = carousel.querySelectorAll(".project-slide");
+
+    /* Índice de la imagen actual */
+    let currentSlide = 0;
+
+
+    /* Cambiar automáticamente cada 4 segundos */
+    setInterval(() => {
+
+        /* Ocultar imagen actual */
+        slides[currentSlide].classList.remove("active");
+
+
+        /* Pasar a la siguiente imagen */
+        currentSlide = (currentSlide + 1) % slides.length;
+
+
+        /* Mostrar nueva imagen */
+        slides[currentSlide].classList.add("active");
+
+    }, 4000);
+
+});

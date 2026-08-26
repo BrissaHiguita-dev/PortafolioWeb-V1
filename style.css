@@ -2532,7 +2532,35 @@ body.dark-mode .form-group textarea {
 }
 
 
+/* =========================================
+   CARRUSEL DE IMÁGENES DEL PROYECTO
+========================================= */
 
+.project-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Todas las imágenes ocupan el mismo espacio */
+.project-carousel .project-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    transition: opacity 1s ease-in-out;
+}
+
+/* Imagen visible */
+.project-carousel .project-slide.active {
+    opacity: 1;
+}
 
 
 
