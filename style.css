@@ -527,6 +527,9 @@ body {
 }
 
 
+
+
+
 /* =========================================
    REDES SOCIALES
 ========================================= */
@@ -1674,6 +1677,54 @@ body.dark-mode
 }
 
 
+/* Contenedor inferior para alinear el botón "Ver más" y "Ver certificados" */
+.card-footer-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Estilo del botón de certificados */
+.btn-certificados {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background-color: #eff6ff;
+    color: var(--primary-color);
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn-certificados:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+/* Modo oscuro para el botón de certificados */
+body.dark-mode .btn-certificados {
+    background-color: #172554;
+    color: #60a5fa;
+    border-color: #1e3a8a;
+}
+
+body.dark-mode .btn-certificados:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
 /* =========================================
    PROYECTOS
 ========================================= */
@@ -1696,20 +1747,12 @@ body.dark-mode
 .filter-button {
 
     padding: 10px 18px;
-
-    border:
-        1px solid var(--border-color);
-
+    border:1px solid var(--border-color);
     background-color: transparent;
-
     border-radius: 25px;
-
     color: var(--text-color);
-
-    font-family: inherit;
-
+    fOnt-family: inherit;
     cursor: pointer;
-
     transition: 0.3s;
 
 }
@@ -1719,9 +1762,7 @@ body.dark-mode
 .filter-button:hover {
 
     background-color: var(--primary-color);
-
     color: white;
-
     border-color: var(--primary-color);
 
 }
@@ -1730,10 +1771,7 @@ body.dark-mode
 .projects-grid {
 
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
+    grid-template-columns:repeat(3, 1fr);
     gap: 25px;
 
 }
